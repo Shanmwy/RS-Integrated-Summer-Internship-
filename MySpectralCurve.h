@@ -22,6 +22,8 @@ public:
 	//曲线绘制的颜色
 	COLORREF color;
 
-	void CalcViewPoints(CRect currentRect);
+	void CalcViewPoints(MyBoundingBox currentBBox, CRect rectPictureControl);
+
+	MyBoundingBox GetBoundingBox();
 };
 
